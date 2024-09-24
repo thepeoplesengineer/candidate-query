@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
@@ -21,3 +22,13 @@ const Nav = () => {
 
 export default Nav;
 
+=======
+const Nav = () => {
+  // TODO: Add necessary code to display the navigation bar and link between the pages
+  return (
+    <div>Nav</div>
+  )
+};
+
+export default Nav;
+>>>>>>> dd70b9be607d715d7c190b22269573636e468f4b
