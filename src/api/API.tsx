@@ -7,9 +7,8 @@ const searchGithub = async () => {
       {
         headers: {
           Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-        },
       }
-    );
+  });
     // console.log('Response:', response);
     const data = await response.json();
     if (!response.ok) {
@@ -27,8 +26,7 @@ const searchGithubUser = async (username: string) => {
   try {
     const response = await fetch(`https://api.github.com/users/${username}`, {
       headers: {
-        Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-      },
+        Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`}
     });
     const data = await response.json();
     if (!response.ok) {
@@ -42,3 +40,4 @@ const searchGithubUser = async (username: string) => {
 };
 
 export { searchGithub, searchGithubUser };
+
